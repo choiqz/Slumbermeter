@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SLEEPTRACK | Community</title>
+    <link rel="stylesheet" href="../css/community.css" />
+    <script src="https://kit.fontawesome.com/863b8527a6.js"></script>
+    <script src="../js/data.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img
+        src="https://cdn.glitch.global/d09a0d75-b5b2-4aab-bd40-18abf775c254/slumbermeter.png?v=1733013970352"
+        alt="logo"
+        id="logo"
+      />
+      <nav>
+        <ul>
+          <li id="home"><a href="home.html">HOME</a></li>
+          <li id="check-in"><a href="checkin.html">CHECK IN</a></li>
+          <li id="community"><a href="community.html">COMMUNITY</a></li>
+          <li id="help"><a href="help.html">HELP</a></li>
+        </ul>
+        <span id="pointer"></span>
+      </nav>
+      <p id="user">Hi, <span id="name">username</span></p>
+    </div>
+    <main>
+      <div class="leaderboard">
+        <h2>leaderboard</h2>
+        <ul></ul>
+      </div>
+      <div class="friend-request">
+        <input
+          type="search"
+          id="friend-search"
+          name="friend-search"
+          placeholder="Who do you want to add?"
+          onkeyup="searchFilter()"
+        />
+        <ul class="request-list"></ul>
+      </div>
+      <div></div>
+    </main>
+    <script src="../js/community.js"></script>
+  </body>
+</html>

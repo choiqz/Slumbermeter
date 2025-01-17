@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*  light: 300, regular: 400,  medium: 500, semi-bold: 600, bold: 700*/
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  background-color: #e8eef4;
+  font-weight: 400;
+}
+
+.top {
+  display: flex;
+  margin-top: 1.5em;
+  padding: 0 1em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul {
+  /*   border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  /*   border: 1px solid blue; */
+  text-indent: -2em;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  padding: 0.8em 0 0.8em 2em;
+  font-weight: 300;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#pointer {
+  position: absolute;
+  border-radius: 30px;
+  width: 15.2em;
+  height: 3.2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+  /*   transform: translateX(14.27em); */
+}
+
+#home {
+  font-weight: 400;
+  z-index: 1;
+}
+
+#home:hover,
+#check-in:hover,
+#community:hover,
+#help:hover {
+  font-weight: 400;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#logo {
+  width: 195px;
+  height: 46px;
+}
+
+#user {
+  display: block;
+  line-height: 1em;
+  width: 6em;
+  font-size: 1.2em;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 8em;
+  margin-top: 1.5em;
+}
+
+.left {
+  display: block;
+  align-items: stretch;
+  width: 45%;
+}
+
+.text {
+  display: flex;
+  margin-top: 5%;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 0.9em;
+}
+
+.text img {
+  width: 70px;
+  height: 70px;
+  margin-top: 3.2em;
+  margin-left: -1.5em;
+}
+
+#total-label {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 28%;
+  line-height: 1.1em;
+}
+
+#total-score {
+  font-weight: 400;
+}
+
+.right {
+  width: 35%;
+  display: block;
+}
+
+#today-score {
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.6);
+  /*   background-color: #AFBDBF; */
+  display: block;
+  align-items: center;
+  border-radius: 30px;
+}
+
+#info,
+#input-button {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+#info {
+  padding-top: 2.8em;
+}
+
+#input-button {
+  width: 85%;
+  border-radius: 20px;
+  padding: 0.4em 0.6em;
+  margin-top: 0.4em;
+  margin-left: 7.5%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#input-button:hover {
+  font-weight: 400;
+  background-color: rgba(232, 211, 176, 0.8);
+  cursor: pointer;
+}
+
+#num {
+  font-weight: 500;
+  font-size: 4.5em;
+  text-align: center;
+  padding-top: 0.3em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#label {
+  text-align: center;
+  font-weight: 300;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#meter-container {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 5px solid rgba(210, 210, 210, 0.6);
+  border-radius: 5px;
+}
+
+#meter {
+  border-top: 5px solid #e8d3b0;
+  border-radius: 5px;
+  width: 0%;
+  margin-top: -0.31em;
+}
+
+.calendar {
+  height: 63%;
+  margin-top: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+#monthYear {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 8px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  color: #999fa6;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  font-size: 1em;
+  border-radius: 50%;
+  transition: 0.2s;
+  font-weight: 300;
+}
+
+.date.active {
+  background: rgba(175, 189, 191, 1);
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dateHigh {
+  background: #5ced73;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dateMedium {
+  background: #ffffc5;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dateLow {
+  background: #ff474c;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.date.inactive {
+  color: #d2d2d2;
+}
+
+.date.inactive:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main {
+    display: block;
+    padding: 1em;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .text {
+    justify-content: center;
+  }
+
+  .text p {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .text img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5em;
+  }
+
+  #total-label {
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  #today-score {
+    width: 100%;
+    margin: 0;
+  }
+  
+  #pointer {
+    display: none;
+  }
+  
+  nav {
+    width: 100%; 
+    min-width: 300px; 
+    padding: 0.5em;
+  }
+
+  nav ul {
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  nav ul li {
+    width: auto; 
+    padding: 0.5em 0;
+    text-indent: 0; 
+    font-size: 1em; 
+  }
+
+  nav ul li a {
+    text-align: center;
+  }
+
+  .calendar {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+  }
+
+  .dates {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .date {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+}
