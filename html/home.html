@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SLEEPTRACK | Home</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="https://kit.fontawesome.com/863b8527a6.js"></script>
+    <script src="../js/data.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img
+        src="https://cdn.glitch.global/d09a0d75-b5b2-4aab-bd40-18abf775c254/slumbermeter.png?v=1733013970352"
+        alt="logo"
+        id="logo"
+      />
+      <nav>
+        <ul>
+          <li id="home"><a href="home.html">HOME</a></li>
+          <li id="check-in"><a href="checkin.html">CHECK IN</a></li>
+          <li id="community"><a href="community.html">COMMUNITY</a></li>
+          <li id="help"><a href="help.html">HELP</a></li>
+        </ul>
+        <span id="pointer"></span>
+      </nav>
+      <p id="user">Hi, <span id="name">username</span></p>
+    </div>
+    <main>
+      <div class="left">
+        <div class="text">
+          <p>Easy and energetic wake up</p>
+          <img
+            src="https://cdn.glitch.global/d09a0d75-b5b2-4aab-bd40-18abf775c254/Moon.png?v=1732758063924"
+            alt="symbol"
+          />
+        </div>
+        <div id="total-label">
+          <p>TOTAL sleep score</p>
+          <p id="total-score"></p>
+        </div>
+      </div>
+      <div class="right">
+        <div id="today-score"></div>
+        <div class="calendar">
+          <div class="header">
+            <button id="prevBtn">
+              <i class="fa solid fa-chevron-left"></i>
+            </button>
+            <div class="monthYear" id="monthYear"></div>
+            <button id="nextBtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="days">
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+            <div class="day">Sun</div>
+          </div>
+          <div class="dates" id="dates"></div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/home.js"></script>
+  </body>
+</html>

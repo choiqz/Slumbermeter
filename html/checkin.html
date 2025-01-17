@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SLEEPTRACK | Check In</title>
+    <link rel="stylesheet" href="../css/checkin.css" />
+    <script src="https://kit.fontawesome.com/863b8527a6.js"></script>
+    <script src="/data.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img
+        src="https://cdn.glitch.global/d09a0d75-b5b2-4aab-bd40-18abf775c254/slumbermeter.png?v=1733013970352"
+        alt="logo"
+        id="logo"
+      />
+      <nav>
+        <ul>
+          <li id="home"><a href="home.html">HOME</a></li>
+          <li id="check-in"><a href="checkin.html">CHECK IN</a></li>
+          <li id="community"><a href="community.html">COMMUNITY</a></li>
+          <li id="help"><a href="help.html">HELP</a></li>
+        </ul>
+        <span id="pointer"></span>
+      </nav>
+      <p id="user">Hi, <span id="name">username</span></p>
+    </div>
+    <main>
+      <div class="container">
+        <div class="content">
+          <h1>RECORD Today's Data</h1>
+          <form id="sleep-form">
+            <div class="date">
+              <p>Today's Date:</p>
+              <p id="today-date"></p>
+            </div>
+
+            <div class="input-group hours">
+              <label for="hours-slept"
+                >How many hours did you sleep today?</label
+              >
+              <input
+                type="number"
+                id="hours-slept"
+                min="0"
+                max="12"
+                step="0.5"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Rate sleep quality from 1-10</label>
+              <div id="sleep-quality" class="radio-group">
+                <label><input type="radio" name="quality" value="1" /> 1</label>
+                <label><input type="radio" name="quality" value="2" /> 2</label>
+                <label><input type="radio" name="quality" value="3" /> 3</label>
+                <label><input type="radio" name="quality" value="4" /> 4</label>
+                <label><input type="radio" name="quality" value="5" /> 5</label>
+                <label><input type="radio" name="quality" value="6" /> 6</label>
+                <label><input type="radio" name="quality" value="7" /> 7</label>
+                <label><input type="radio" name="quality" value="8" /> 8</label>
+                <label><input type="radio" name="quality" value="9" /> 9</label>
+                <label
+                  ><input type="radio" name="quality" value="10" /> 10</label
+                >
+              </div>
+            </div>
+
+            <div class="input-group">
+              <h2>Activities 1 Hour Before Bed</h2>
+              <div class="pre-bed-activities">
+                <div class="pre-bed-activity">
+                  <label>Drink Caffeine</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="caffeine" value="true" />
+                      Yes</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="caffeine"
+                        value="false"
+                        checked
+                      />
+                      No</label
+                    >
+                  </div>
+                </div>
+                <div class="pre-bed-activity">
+                  <label>Exercise</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="exercise" value="true" />
+                      Yes</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="exercise"
+                        value="false"
+                        checked
+                      />
+                      No</label
+                    >
+                  </div>
+                </div>
+                <div class="pre-bed-activity">
+                  <label>Use Phone</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="phone" value="true" />
+                      Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="phone" value="false" checked />
+                      No</label
+                    >
+                  </div>
+                </div>
+                <div class="pre-bed-activity">
+                  <label>Take a Nap</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="nap" value="true" /> Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="nap" value="false" checked />
+                      No</label
+                    >
+                  </div>
+                </div>
+                <div class="pre-bed-activity">
+                  <label>Eat a Meal</label>
+                  <div class="radio-group">
+                    <label
+                      ><input type="radio" name="meal" value="true" />
+                      Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="meal" value="false" checked />
+                      No</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="../js/checkin.js"></script>
+  </body>
+</html>

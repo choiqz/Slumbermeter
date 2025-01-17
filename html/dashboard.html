@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SLEEPTRACK | Check In</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script src="https://kit.fontawesome.com/863b8527a6.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img
+        src="https://cdn.glitch.global/d09a0d75-b5b2-4aab-bd40-18abf775c254/slumbermeter.png?v=1733013970352"
+        alt="logo"
+        id="logo"
+      />
+      <nav>
+        <ul>
+          <li id="home"><a href="home.html">HOME</a></li>
+          <li id="check-in"><a href="dashboard.html">CHECK IN</a></li>
+          <li id="community"><a href="community.html">COMMUNITY</a></li>
+          <li id="help"><a href="help.html">HELP</a></li>
+        </ul>
+        <span id="pointer"></span>
+      </nav>
+      <p id="user">Hi, <span id="name">username</span></p>
+    </div>
+    <main>
+      <div class="sleep-container">
+        <div class="content">
+          <div id="hours">
+            <p id="hours-num"></p>
+            <p id="hours-label">hours of sleep</p>
+          </div>
+          <div id="meter-container">
+            <div id="meter"><div id="meter-score"></div></div>
+            <div id="score">
+              <p id="score-num"></p>
+              <p id="score-label">sleep score</p>
+            </div>
+          </div>
+          <div id="quality">
+            <p id="quality-num"></p>
+            <p id="quality-label">quality of sleep</p>
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-container">
+        <div class="content">
+          <p id="recommendation-label">Recommendations</p>
+          <ul></ul>
+        </div>
+      </div>
+    </main>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>
